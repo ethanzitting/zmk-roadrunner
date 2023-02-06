@@ -53,14 +53,14 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ HOME     │ UP       │  END     │ PAGE UP  │ DEL      │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
-            &kp HOME   &kp UP     &kp END   &kp PG_UP  &kp DEL          &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
+        //│ HOME     │PAGE DOWN │ PAGE UP  │    END     DEL      │   │          │          │          │          │  :       │
+            &kp HOME   &kp PG_DN &kp PG_UP   &kp END  &kp DEL          &trans     &trans    &trans     &trans       &kp COLON
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ LEFT     │  DOWN    │ RIHT     │ PAGE DOWN│ ESC      │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
-           &kp LEFT   &kp DOWN   &kp RIGHT  &kp PG_DN  &kp ESC         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
+        //│ LEFT     │  DOWN    │ UP       │ RIGHT    │ ESC      │   │          │          │          │          │  ;       │
+           &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp ESC         &trans     &trans     &trans     &trans     &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │ PRINT SC │volume up │volume dwn│  Next    │   │ PREV SONG│    -     │     +    │   `      │   ~      │
-           &caps_word  &trans   &trans      &trans     &trans         &trans      &kp MINUS  &kp PLUS   &kp GRAVE  &kp TILDE
+        //│          │          │          │          │          │   │          │    -     │     +    │   `      │   ~      │
+           &trans       &trans   &trans      &trans     &trans         &trans      &kp MINUS  &kp PLUS   &kp GRAVE  &kp TILDE
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans      &trans        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -76,7 +76,7 @@
         //│   1      │  2       │  3       │  4       │  5       │   │  6       │  7       │  8       │  9       │  0       │
             HRML(N1,    N2,       N3,        N4)        &kp N5         &kp N6     HRMR(N7,   N8,        N9,         N0)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  esc     │          │  _       │    =     │  del     │   │  [       │   ]      │  <       │  >       │         │
+        //│  esc     │     \    │  _       │    =     │  del     │   │  [       │   ]      │  <       │  >       │    |     │
            &kp ESC     &kp BSLH  &kp UNDER &kp EQUAL   &kp DEL       &kp LBKT    &kp RBKT   &kp LT     &kp GT     &kp PIPE  
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
